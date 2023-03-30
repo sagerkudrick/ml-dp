@@ -1,3 +1,14 @@
-# COSC_3P99_Differential_Privacy
+# Differential Privacy
 Brock University, 2023
-Place holder for Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividino
+Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividino
+
+# MNIST prediction with & without differential privacy
+<p align="center">
+  <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/mnist_predictions.gif">
+</p>
+
+# IMDb predictions with & without differential privacy
+<p align="center">
+  <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/imdb_prediction_results.PNG">
+</p>
+
