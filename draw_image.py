@@ -10,7 +10,7 @@ pen_color = (255, 255, 255) # line is white, background black- model trained on 
 # method for creating the games screen + returning the image
 def start_drawing():
     global screen
- 
+    pyg.display.set_caption("Hand Drawing Prediction")
     pyg.init() # initialize the window
     screen = pyg.display.set_mode((400, 400)) # image and screen is 400x400
     img = window_loop() # loop until we get an image back
