@@ -9,6 +9,6 @@ Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividi
 
 # IMDb predictions with & without differential privacy
 <p align="center">
-  <img width="500" height="700" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/imdb_prediction_results.PNG">
+  <img width="350" height="700" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/imdb_prediction_results.PNG">
 </p>
 
