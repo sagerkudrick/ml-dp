@@ -1,6 +1,8 @@
 # Protecting Privacy in Machine Learning: Training Models with Differential Privacy & Opacus
-Brock University, 2023  
-Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividino
+Sager Kudrick
+5919170
+Professor Renata Queiroz Dividino
+Brock University, 2023
 
 # Table Of Contents
 1. Introduction
@@ -18,13 +20,13 @@ Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividi
 
 # Introduction
 
+This project allows you to train two different models with & without differential privacy: MNIST, and IMDb. It then allows you to evaluate custom reviews, or custom handwritten images with the trained models. Pre-trained models are also provided.
+
 This project contains four main files:
 1. imdb_train.py - responsible for training an imdb sentiment prediction model
 2. mnist_train.py - responsible for training a handwriting prediction model (for numbers 0-9)
 3. imdb_evaluate.py - responsible for evaluating reviews stores in imdb_samples/reviews.json
 4. imnist_evaluate.py - responsible for evaluating handwriting in real time, allowing the user to draw and instantly evaluate an image
-
-This project allows you to train two different models with & without differential privacy: MNIST, and IMDb. It then allows you to evaluate custom reviews, or custom handwritten images with the trained models. Pre-trained models are also provided.
 
 # Pre-Bundled Models
 Rather than training your own models, you can instead use pre-trained models packaged with this project. They are listed as such:
