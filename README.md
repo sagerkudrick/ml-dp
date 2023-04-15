@@ -2,6 +2,20 @@
 Brock University, 2023
 Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividino
 
+# Table Of Contents
+1. Introduction
+2. Pre-Bundled Models
+3. Installation
+- Installing PyTorch
+- CUDA compatible GPUs
+- Installing CUDA (Not required, but recommended)
+4. Training models
+- Training commands
+- Training with & without differential privacy
+5. MNIST prediction with & without differential privacy
+6. IMDb predictions with & without differential privacy
+7. Citations
+
 # Introduction
 
 This project contains four main files:
