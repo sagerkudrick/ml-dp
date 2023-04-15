@@ -80,6 +80,7 @@ python imdb_train.py --disable-dp
 
 3. Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2021). Opacus: User-Friendly Differential Privacy Library in PyTorch. arXiv preprint arXiv:2109.12298.
 
+4. Fridman, L., & Trask, A. (2018, October 31). Introduction to Deep Learning [Video]. YouTube. https://www.youtube.com/watch?v=4zrU54VIK6k&ab_channel=LexFridman
 
 Citation if you use Opacus in papers
 ```
