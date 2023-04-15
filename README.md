@@ -10,6 +10,8 @@ This project contains four main files:
 3. imdb_evaluate.py - responsible for evaluating reviews stores in imdb_samples/reviews.json
 4. imnist_evaluate.py - responsible for evaluating handwriting in real time, allowing the user to draw and instantly evaluate an image
 
+This project allows you to train two different models with & without differential privacy: MNIST, and IMDb. It then allows you to evaluate custom reviews, or custom handwritten images with the trained models. Pre-trained models are also provided.
+
 # Installation
 Using Opacus with CUDA requires specific PyTorch and CUDA installations. If you don't have a compatible GPU, you can skip these steps and continue on from "Training Models", and use the CPU command. 
 
