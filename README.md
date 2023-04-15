@@ -74,9 +74,11 @@ python imdb_train.py --disable-dp
 </p>
 
 # Citations
-Near, J. P., & Abuah, C. (2021). Programming Differential Privacy (Vol. 1). Retrieved from https://uvm-plaid.github.io/programming-dp/
-Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. Foundations and Trends in Theoretical Computer Science, 9(3-4), 211-407. doi: 10.1561/0400000042.
-Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2021). Opacus: User-Friendly Differential Privacy Library in PyTorch. arXiv preprint arXiv:2109.12298.
+1. Near, J. P., & Abuah, C. (2021). Programming Differential Privacy (Vol. 1). Retrieved from https://uvm-plaid.github.io/programming-dp/
+
+2. Dwork, C., & Roth, A. (2014). The Algorithmic Foundations of Differential Privacy. Foundations and Trends in Theoretical Computer Science, 9(3-4), 211-407. doi: 10.1561/0400000042.
+
+3. Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2021). Opacus: User-Friendly Differential Privacy Library in PyTorch. arXiv preprint arXiv:2109.12298.
 
 
 Citation if you use Opacus in papers
