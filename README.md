@@ -12,6 +12,14 @@ This project contains four main files:
 
 This project allows you to train two different models with & without differential privacy: MNIST, and IMDb. It then allows you to evaluate custom reviews, or custom handwritten images with the trained models. Pre-trained models are also provided.
 
+# Pre-Bundled Models
+Rather than training your own models, you can instead use pre-trained models packaged with this project. They are listed as such:
+
+1. models/mnist_with_dp.pt - an MNIST model trained with differential privacy.
+2. models/mnist_no_dp.pt - an MNIST model trained WITHOUT differential privacy.
+3. models/imdb_with_dp.pt - an IMDb sentiment prediction model trained with differential privacy.
+4. models/mnist_with_dp.pt - an IMDb sentiment prediction model trained WITHOUT differential privacy.
+
 # Installation
 Using Opacus with CUDA requires specific PyTorch and CUDA installations. If you don't have a compatible GPU, you can skip these steps and continue on from "Training Models", and use the CPU command. 
 
