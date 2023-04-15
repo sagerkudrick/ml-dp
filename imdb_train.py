@@ -181,8 +181,9 @@ def main():
     # minimizing the loss function
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     privacy_engine = None
-
+    filename = "imdb_without_dp.pt"
     if not args.disable_dp:
+        filename = "imdb_with_dp.pt"
         privacy_engine = PrivacyEngine(secure_mode=args.secure_rng)
 
         model, optimizer, train_loader = privacy_engine.make_private_with_epsilon(
@@ -221,8 +222,7 @@ def main():
     for epoch in range(1, args.epochs + 1):
         train(args, model, train_loader, optimizer, privacy_engine, epoch)
         mean_accuracy = evaluate(args, model, test_loader)
-
-    torch.save(model.state_dict(), "imdb_without_dp_test.pt")
+    torch.save(model.state_dict(), ".\\models\\" + filename)
 
 
 if __name__ == "__main__":
