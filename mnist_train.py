@@ -27,7 +27,7 @@ import torch.optim as optim
 from opacus import PrivacyEngine
 from torchvision import datasets, transforms
 from tqdm import tqdm
-from ml_args import get_args
+from utils.ml_args import get_args
 
 # Precomputed characteristics of the MNIST dataset
 MNIST_MEAN = 0.1307

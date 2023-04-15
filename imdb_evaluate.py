@@ -13,7 +13,7 @@ from tqdm import tqdm
 from transformers import BertTokenizerFast
 from datasets import Dataset
 import datasets
-from ml_args import get_args
+from utils.ml_args import get_args
 import win32api
 
 # imdb nn model 

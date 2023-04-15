@@ -27,7 +27,7 @@ from tqdm import tqdm
 from transformers import BertTokenizerFast
 import sys
 import importlib
-from ml_args import get_args
+from utils.ml_args import get_args
 
 class SampleNet(nn.Module):
     def __init__(self, vocab_size: int):

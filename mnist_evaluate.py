@@ -23,11 +23,11 @@ import os
 from PIL import Image
 import torch.nn.functional as F
 from enum import Enum
-from ml_args import get_args 
+from utils.ml_args import get_args 
 import pygame as pyg
 import io
 import base64
-import draw_image as draw_img
+import utils.draw_image as draw_img
 import win32api
 
 MNIST_MEAN = 0.1307
