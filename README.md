@@ -49,7 +49,6 @@ python imdb_train.py --device cuda:0
   <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/mnist_predictions.gif">
 </p>
 
-# Setting it up
 
  # IMDb predictions with & without differential privacy
 <p align="center">
