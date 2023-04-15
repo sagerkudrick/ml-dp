@@ -20,6 +20,9 @@ Using Opacus with CUDA requires specific PyTorch and CUDA installations. If you 
 1. Choose your PyTorch Build, OS, Package, Language, and CUDA 11.7 from https://pytorch.org/get-started/locally/
 2. Paste the built command to install the appropriate versions. An example installation for Stable (2.0.0), Windows, Pip, Python, CUDA 11.7 looks like this: pip3 "install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117"
 
+# CUDA compatible GPUs 
+A list of compatible GPUs are listed on https://developer.nvidia.com/cuda-gpus - please ensure you have a compatible GPU before trying to install or train with CUDA. 
+
 # Installing CUDA (Not required, but recommended) 
 
 Because we require CUDA 11.7 or CUDA 11.8, we need to use previous versions. CUDA 11.7 is available from:
