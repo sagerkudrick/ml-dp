@@ -52,6 +52,15 @@ Training with CUDA - this is default, but to explicitly run with cuda:
 python imdb_train.py --device cuda:0
 ```
 
+# Training with & without differential privacy
+
+By default the trainers will train with differential privacy. 
+
+To train without differential privacy:
+```
+python imdb_train.py --disable-dp
+```
+
 # MNIST prediction with & without differential privacy
 <p align="center">
   <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/mnist_predictions.gif">
