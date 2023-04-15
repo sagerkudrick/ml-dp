@@ -1,8 +1,8 @@
 # Protecting Privacy in Machine Learning: Training Models with Differential Privacy & Opacus
-Sager Kudrick
-5919170
-Professor Renata Queiroz Dividino
-Brock University, 2023
+Sager Kudrick  
+5919170  
+Professor Renata Queiroz Dividino  
+Brock University, 2023  
 
 # Table Of Contents
 1. Introduction
