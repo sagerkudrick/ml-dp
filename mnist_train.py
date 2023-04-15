@@ -151,8 +151,10 @@ def main():
 
         optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=0)
         privacy_engine = None
+        filename = "mnist_without_dp.pt"
 
         if not args.disable_dp:
+            filename = "mnist_with_dp.pt"
             privacy_engine = PrivacyEngine(secure_mode=args.secure_rng)
             model, optimizer, train_loader = privacy_engine.make_private_with_epsilon(
            
@@ -202,7 +204,7 @@ def main():
             )
         )
 
-    torch.save(model.state_dict(), "mnist_with_dp.pt")
+    torch.save(model.state_dict(), filename)
 
 
 if __name__ == "__main__":

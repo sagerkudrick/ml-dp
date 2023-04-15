@@ -84,17 +84,6 @@ def main():
     model.load_state_dict(new_checkpoint)
     model.eval()
 
-    # trained data 
-    imdb_trained = load_dataset("imdb", cache_dir=args.data_root)
-    imdb_trained_tokenized = imdb_trained["test"].map(
-        lambda x: tokenizer(
-            x["text"], truncation=True, max_length=args.max_sequence_length
-        ),
-        batched=True,
-    )
-
-    imdb_trained_tokenized.set_format(type="torch", columns=["input_ids", "label"])
-
     # my stuff
     raw_dataset = load_dataset('json', data_files={"train": os.path.dirname(__file__) + '\\imdb_samples\\reviews.json'}, cache_dir=args.data_root)
     tokenizer = BertTokenizerFast.from_pretrained("bert-base-cased")
@@ -109,17 +98,7 @@ def main():
     dataset2.set_format(type="torch", columns=["input_ids", "label"])
 
     trainer = dataset2
-    
-    # randomize, the downloaded one
-    test_loader = torch.utils.data.DataLoader(
-        imdb_trained_tokenized,
-        batch_size=args.batch_size,
-        shuffle=True,
-        num_workers=args.workers,
-        collate_fn=padded_collate,
-        pin_memory=True,
-    )
-    
+
     # dataset I made
     train_loader = torch.utils.data.DataLoader(
         trainer,

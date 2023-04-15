@@ -42,7 +42,7 @@ def get_args():
         "-n",
         "--epochs",
         type=int,
-        default=100,
+        default=5,
         metavar="N",
         help="number of epochs to train",
     )

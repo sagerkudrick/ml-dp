@@ -136,26 +136,7 @@ def prediction(img):
         num_workers=0,
         pin_memory=True,
     )
-    
-    # load test dataset
-    test_loader = torch.utils.data.DataLoader(
-        datasets.MNIST(
-            args.data_root,
-            train=False,
-            download=True,
-            transform=transforms.Compose(
-                [
-                    transforms.ToTensor(),
-                    transforms.Normalize((MNIST_MEAN,), (MNIST_STD,)),
-                ]
-            ),
-        ),
-        batch_size=args.test_batch_size,
-        shuffle=True,
-        num_workers=0,
-        pin_memory=True,
-    )
-    
+
     model = SampleConvNet().to(device)
     model_dp = SampleConvNet().to(device)
     
@@ -176,7 +157,7 @@ def prediction(img):
 
     model.eval()
     model_dp.eval()
-    #test(model, device, custom_loader)
+
     no_dp_pred = get_prediction(model, device, custom_loader, "No DP - ")
     dp_pred = get_prediction(model_dp, device, custom_loader, "With DP - ")
 

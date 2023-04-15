@@ -14,7 +14,6 @@
 # limitations under the License.
 
 import argparse
-
 import numpy as np
 import torch
 import torch.nn as nn
@@ -177,12 +176,12 @@ def main():
 
     # Model is our custom module that leverages nn.Module, gives access to building neural networks
     model = SampleNet(vocab_size=len(tokenizer)).to(device)
-    
+
     # pytorch, you choose what algorithm you want to use that updates weights of the model,
     # minimizing the loss function
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
     privacy_engine = None
-    
+
     if not args.disable_dp:
         privacy_engine = PrivacyEngine(secure_mode=args.secure_rng)
 
@@ -199,24 +198,23 @@ def main():
             data_loader=train_loader,
             
             # number of training steps? no documentation
-            epochs=args.epochs + 1,
-            
+            epochs=args.epochs,
+
             # target epsilon, smaller is better
-            target_epsilon=33,
-            
+            target_epsilon=5,
+
             # target delta, chance that the datasets released
             target_delta=0.001,
-            
+
             # maximum norm of per-sample gradients, values over this are clipped to the specified value
             max_grad_norm=args.max_per_sample_grad_norm,
-            
+
             # standard sampling, required for DP guarantees - unstable when batch-size is 1
             poisson_sampling=False,
-            
+
             # batch_first = True # set to true by previous, tensor is shape [K, batch_size, ...], if false: [batch_size, ...]
-            
+
             # loss_reduction = sum/mean # used for aggregating the gradients
-            
         )
 
     mean_accuracy = 0
