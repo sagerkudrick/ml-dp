@@ -1,5 +1,5 @@
-# Differential Privacy
-Brock University, 2023
+# Protecting Privacy in Machine Learning: Training Models with Differential Privacy & Opacus
+Brock University, 2023  
 Sager Kudrick's Differential Privacy project for Professor Renata Queiroz Dividino
 
 # Table Of Contents
