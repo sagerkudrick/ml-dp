@@ -84,6 +84,11 @@ python imdb_train.py --disable-dp
 
 5. Opacus. (n.d.). Tutorials [Webpage]. Retrieved March 6th, 2023, from https://opacus.ai/tutorials/
 
+6. Mironov, I., Talwar, K., & Zhang, L. (2019). R'enyi Differential Privacy of the Sampled Gaussian Mechanism. arXiv preprint arXiv:1908.10530. https://arxiv.org/abs/1908.10530
+
+7. Yousefpour, A., Shilov, I., Sablayrolles, A., Testuggine, D., Prasad, K., Malek, M., Nguyen, J., Ghosh, S., Bharadwaj, A., Zhao, J., Cormode, G., & Mironov, I. (2022). Opacus: User-Friendly Differential Privacy Library in PyTorch. arXiv preprint arXiv:2109.12298. https://arxiv.org/abs/2109.12298
+
+
 Citation if you use Opacus in papers
 ```
 @article{opacus,
