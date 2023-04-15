@@ -82,6 +82,8 @@ python imdb_train.py --disable-dp
 
 4. Fridman, L., & Trask, A. (2018, October 31). Introduction to Deep Learning [Video]. YouTube. https://www.youtube.com/watch?v=4zrU54VIK6k&ab_channel=LexFridman
 
+5. Opacus. (n.d.). Tutorials [Webpage]. Retrieved March 6th, 2023, from https://opacus.ai/tutorials/
+
 Citation if you use Opacus in papers
 ```
 @article{opacus,
