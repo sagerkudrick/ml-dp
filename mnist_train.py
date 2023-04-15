@@ -203,8 +203,7 @@ def main():
                 len(run_results), np.mean(run_results) * 100, np.std(run_results) * 100
             )
         )
-
-    torch.save(model.state_dict(), filename)
+    torch.save(model.state_dict(), ".\\models\\" + filename)
 
 
 if __name__ == "__main__":
