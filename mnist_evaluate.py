@@ -140,8 +140,8 @@ def prediction(img):
     model = SampleConvNet().to(device)
     model_dp = SampleConvNet().to(device)
     
-    checkpoint = torch.load(os.path.dirname(__file__) + '\\mnist_without_dp.pt')
-    checkpoint_dp = torch.load(os.path.dirname(__file__) + '\\mnist_with_dp.pt')
+    checkpoint = torch.load(os.path.dirname(__file__) + '\\models\\mnist_no_dp.pt')
+    checkpoint_dp = torch.load(os.path.dirname(__file__) + '\\models\\mnist_with_dp.pt')
 
     new_checkpoint = {}
     for key in checkpoint.keys():
