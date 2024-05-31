@@ -26,10 +26,7 @@ Brock University, 2023
 4. Training models
    1. Training commands
    2. Training with & without differential privacy
-5. Demonstrations
-   1. MNIST prediction with & without differential privacy
-   2. IMDb predictions with & without differential privacy
-6. Citations
+5. Citations
 
 # Introduction
 
