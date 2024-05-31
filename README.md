@@ -1,3 +1,15 @@
+# MNIST prediction with & without differential privacy
+<p align="center">
+  <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/mnist_predictions.gif">
+</p>
+
+
+ # IMDb predictions with & without differential privacy
+<p align="center">
+  
+  <img width="319" height="553" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/imdb_prediction_results.PNG">
+</p>
+
 # <p align="center">Protecting Privacy in Machine Learning: Training Models with Differential Privacy & Opacus</p>  
 Sager Kudrick
 5919170  
@@ -77,18 +89,6 @@ To train without differential privacy:
 ```
 python imdb_train.py --disable-dp
 ```
-
-# MNIST prediction with & without differential privacy
-<p align="center">
-  <img width="500" height="500" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/mnist_predictions.gif">
-</p>
-
-
- # IMDb predictions with & without differential privacy
-<p align="center">
-  
-  <img width="319" height="553" src="https://github.com/SagerKudrick/ml-dp/blob/main/Pictures/imdb_prediction_results.PNG">
-</p>
 
 # Citations
 1. Near, J. P., & Abuah, C. (2021). Programming Differential Privacy (Vol. 1). Retrieved from https://uvm-plaid.github.io/programming-dp/
